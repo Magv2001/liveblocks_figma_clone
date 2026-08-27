@@ -301,11 +301,11 @@ export const handleCanvasSelectionCreated = ({
       height: scaledHeight?.toFixed(0).toString() || "",
       fill: selectedElement?.fill?.toString() || "",
       stroke: selectedElement?.stroke || "",
-      // @ts-ignore
+      // @ts-expect-error
       fontSize: selectedElement?.fontSize ? String(selectedElement.fontSize) : "",
-      // @ts-ignore
+      // @ts-expect-error
       fontFamily: selectedElement?.fontFamily || "",
-      // @ts-ignore
+      // @ts-expect-error
       fontWeight: selectedElement?.fontWeight ? String(selectedElement.fontWeight) : "",
     });
   }

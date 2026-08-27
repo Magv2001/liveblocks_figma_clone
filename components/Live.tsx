@@ -93,7 +93,7 @@ const Live = ({ canvasRef, undo, redo }: Props) => {
         );
     }, [cursorState.mode, setCursorState])
 
-    const handlerPointerUp = useCallback((event: React.PointerEvent) => {
+    const handlerPointerUp = useCallback(() => {
         setCursorState((state: CursorState) => 
             cursorState.mode === CursorMode.Reaction ? { ...state, isPressed: true } : state
         );
